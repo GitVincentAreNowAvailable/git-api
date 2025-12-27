@@ -1,0 +1,17 @@
+# Environment variables
+config.js
+.env
+.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node modules (if used)
+node_modules/
