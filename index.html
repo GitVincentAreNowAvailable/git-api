@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Repository Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>GitHub Repository Search</h1>
+    <p>Search and discover repositories on GitHub</p>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input 
+        id="searchInput" 
+        type="text"
+        placeholder="Search repositories..." 
+        aria-label="Repository search">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loading" hidden>
+      <div class="spinner"></div>
+      <p>Loading repositories...</p>
+    </div>
+
+    <div id="error" class="error-message"></div>
+    <div id="results" class="results-container"></div>
+  </main>
+
+  <footer>
+    <p>Powered by <a href="https://docs.github.com/en/rest" target="_blank">GitHub REST API</a></p>
+    <p>&copy; 2025 GitHub Repository Search | API Group Project</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
